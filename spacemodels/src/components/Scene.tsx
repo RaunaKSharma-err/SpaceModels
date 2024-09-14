@@ -1,9 +1,6 @@
 import { OrbitControls, Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Earth from "../pages/earth";
-import Mars from "../pages/Mars";
-import Mercury from "../pages/Mercury";
-import Venus from "../pages/Venus";
+import Sun from "../pages/sun";
 
 const Scene = () => {
   return (
@@ -21,9 +18,9 @@ const Scene = () => {
         fade
       />
       <OrbitControls />
-      <ambientLight intensity={2} />
+      <ambientLight intensity={0.6} />
       <directionalLight />
-      <Venus />
+      <Sun />
     </Canvas>
   );
 };
